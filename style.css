@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header-1 {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  /* margin-bottom: 0;
+  position: fixed;
+  top: 0; */
+  width: 100vw;
+}
+
+.section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0;
+  height: 100vh;
+  background-color: grey;
+}
+
+h2 {
+  color: red;
+}
+
+.encryption-area {
+  background-color: rebeccapurple;
+  width: 40%;
+  margin: 3%;
+  height: auto;
+}
+
+.encryption-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
