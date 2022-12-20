@@ -11,35 +11,38 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
+  background-color: #c886e5;
   /* margin-bottom: 0;
   position: fixed;
   top: 0; */
   width: 100vw;
 }
 
-.section-1 {
+.encryption-area {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 0;
   height: 100vh;
-  background-color: grey;
+  background-color: #caadde;
 }
 
 h2 {
   color: red;
 }
 
-.encryption-area {
-  background-color: rebeccapurple;
-  width: 40%;
-  margin: 3%;
-  height: auto;
-}
-
 .encryption-style {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  width: 40%;
+  margin: 3%;
+  gap: 5px;
+  height: 200px;
+  background-color: #f6ecbf;
+}
+
+.encrypt {
+  width: 100%;
 }

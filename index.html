@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encryption and Decryption</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -14,31 +15,53 @@
     <header class="header-1">
         <h1 class="">ENCRYPTION AND DECRYPTION PROGRAM</h1>
     </header>
-    <section class="section-1">
-        <div class="encryption-area encryption-style">
-            <section>
+    <section class="encryption-area">
+        <div class="encryption-style">
+            <section class="encrypt">
                 <label for="Encryption">To be encrypted:</label>
-                <input type="text" name="" id="Encryption">
-                <button type="submit">Encrypt</button>
+                <input type="text" name="" id="encryption">
+            </section>
+            <section class="key">
+                <label for="encryption-key">Encryption key</label>
+                <input type="password" id="encryption-key" placeholder="Enter your Password here...">
+                <button class="btn" onclick="encryptMessage()">Encrypt</button>
+                <label for="encryption-algorithms">Type:</label>
+                <select name="encryption-algorithms" id="encryption-algorithms">
+                    <option value="AES">AES</option>
+                    <option value="3DES">3DES</option>
+                    <option value="OTP">OTP</option>
+                </select>
             </section>
         </div>
-        <div class="encryption-area encryption-style">
+        <div class="encryption-style">
             <section>
                 <label for="Encryption">To be Decrypted:</label>
-                <input type="text" name="" id="Encryption">
-                <button type="submit">Encrypt</button>
+                <input type="text" name="" id="decryption">
+            </section>
+            <section>
+                <label for="encryption-key">Encryption key</label>
+                <input type="password" id="password" placeholder="Enter your Password here...">
+                <button class="btn" onclick="decryptMessage()">decrypt</button>
+                <label for="encryption-algorithms">Type:</label>
+                <select name="encryption-algorithms" id="encryption-algorithms">
+                    <option value="AES">AES</option>
+                    <option value="3DES">3DES</option>
+                    <option value="OTP">OTP</option>
+                </select>
             </section>
         </div>
-        <div class="encryption-area">
+        <div class="encryption-style">
             <h2>The Encrypted version:</h2>
-            <p>Wait here for the Encrypted version:</p>
+            <textarea id="encrypted-result" rows="8" cols="50" readonly></textarea>
         </div>
-        <div class="encryption-area">
+        <div class="encryption-style">
             <h2>The Dencrypted version:</h2>
-            <p>Wait here for the Dencrypted version:</p>
+            <textarea id="decrypted-result" rows="8" cols="50" readonly></textarea>
         </div>
-
     </section>
+
+    <script src="index.js">
+    </script>
 </body>
 
 </html>
